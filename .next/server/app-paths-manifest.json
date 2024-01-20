@@ -1,0 +1,6 @@
+{
+  "/(chat)/page": "app/(chat)/page.js",
+  "/api/chat/route": "app-edge-has-no-entrypoint",
+  "/(chat)/chat/[id]/page": "app/(chat)/chat/[id]/page.js",
+  "/sign-in/page": "app/sign-in/page.js"
+}

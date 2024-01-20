@@ -1,0 +1,21 @@
+/* [project]/node_modules/.pnpm/geist@1.2.0_next@14.0.5-canary.38/node_modules/geist/dist/geistsans_7264e5cc.module.css [app-client] (css) */
+@font-face{
+  font-family: '__GeistSans_7264e5';
+  src: url('./fonts/geist-sans/Geist-Variable.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face{
+  font-family: '__GeistSans_Fallback_7264e5';
+  src: local("Arial");
+  ascent-override: 90.51%;
+  descent-override: 21.64%;
+  line-gap-override: 9.84%;
+  size-adjust: 101.65%;
+}
+.className__geistsans_7264e5cc__cd54fa24 {
+  font-family: '__GeistSans_7264e5', '__GeistSans_Fallback_7264e5';
+}
+.variable__geistsans_7264e5cc__cd54fa24 {
+  --font-geist-sans: '__GeistSans_7264e5', '__GeistSans_Fallback_7264e5';
+}
+/*# sourceMappingURL=787cb_geist_dist_geistsans_7264e5cc_module_b52d8e.css.map*/

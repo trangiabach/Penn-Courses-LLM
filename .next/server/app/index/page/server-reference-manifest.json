@@ -1,0 +1,53 @@
+{
+  "node": {
+    "18165312b87b38c8eeea9c03383b142333a1ad1b": {
+      "workers": {
+        "app/(chat)/page": "[project]/.next-internal/server/app/(chat)/page/actions.js/(ACTIONS_MODULE0)/[project]/app/actions.ts [app-rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/(chat)/page": "rsc"
+      }
+    },
+    "5e03bcf849e13ca19473aba42d365d04b06cc25f": {
+      "workers": {
+        "app/(chat)/page": "[project]/.next-internal/server/app/(chat)/page/actions.js/(ACTIONS_MODULE0)/[project]/app/actions.ts [app-rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/(chat)/page": "rsc"
+      }
+    },
+    "6ca9c22386c40a18919c3de1ab9497503920cb02": {
+      "workers": {
+        "app/(chat)/page": "[project]/.next-internal/server/app/(chat)/page/actions.js/(ACTIONS_MODULE0)/[project]/app/actions.ts [app-rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/(chat)/page": "rsc"
+      }
+    },
+    "31009c7e4eb3a1734f1c375d268a8d7fb6265461": {
+      "workers": {
+        "app/(chat)/page": "[project]/.next-internal/server/app/(chat)/page/actions.js/(ACTIONS_MODULE0)/[project]/app/actions.ts [app-rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/(chat)/page": "rsc"
+      }
+    },
+    "f1a7cb54f3fd619d4be5d2b973bfd46453125cb6": {
+      "workers": {
+        "app/(chat)/page": "[project]/.next-internal/server/app/(chat)/page/actions.js/(ACTIONS_MODULE0)/[project]/app/actions.ts [app-rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/(chat)/page": "rsc"
+      }
+    },
+    "a8bbe34e13a85554c86edd279e11a5d47f9ac99f": {
+      "workers": {
+        "app/(chat)/page": "[project]/.next-internal/server/app/(chat)/page/actions.js/(ACTIONS_MODULE0)/[project]/app/actions.ts [app-rsc] (ecmascript) (ecmascript)"
+      },
+      "layer": {
+        "app/(chat)/page": "rsc"
+      }
+    }
+  },
+  "edge": {}
+}

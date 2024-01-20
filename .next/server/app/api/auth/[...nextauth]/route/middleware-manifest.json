@@ -1,0 +1,36 @@
+{
+  "sorted_middleware": [
+    "/api/auth/[...nextauth]/route"
+  ],
+  "middleware": {},
+  "instrumentation": null,
+  "functions": {
+    "/api/auth/[...nextauth]/route": {
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/edge/chunks/node_modules_next_dist_compiled_b802ce._.js",
+        "server/edge/chunks/node_modules_next_dist_esm_033189._.js",
+        "server/edge/chunks/node_modules_next_dist_ea89ec._.js",
+        "server/edge/chunks/edge-wrapper_69693a.js",
+        "server/edge/chunks/node_modules_@auth_core_3d8b71._.js",
+        "server/edge/chunks/node_modules_jose_dist_browser_41870b._.js",
+        "server/edge/chunks/node_modules_252adb._.js",
+        "server/edge/chunks/_f50061._.js",
+        "server/edge/chunks/edge-wrapper_766566.js",
+        "server/edge/chunks/edge-wrapper_5ff10e.js"
+      ],
+      "name": "/api/auth/[...nextauth]",
+      "page": "/api/auth/[...nextauth]/route",
+      "matchers": [
+        {
+          "regexp": "^/api/auth/(?P<nxtPnextauth>.+?)(?:/)?$",
+          "locale": false,
+          "originalSource": "/api/auth/[...nextauth]"
+        }
+      ]
+    }
+  }
+}
