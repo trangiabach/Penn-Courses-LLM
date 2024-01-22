@@ -30,6 +30,38 @@ $ npm install
 $ npm run dev
 ```
 
+### Cohere Connector
+
+This app uses the Cohere Connector API for RAG (Retrieval Augmented Generation) functionality. This is a Flask server running a `/search` endpoint for Cohere to query relevant documents.
+
+## Run Cohere Connector
+
+First, generate embeddings `courses_graph.json` using Cohere Embed
+```
+python run dev/generate_embeddings.py
+```
+
+Secondly, load embeddings into a Pinecone instance,
+```
+python run dev/load_data.py
+```
+
+Thirdly, run the Flask serving the document search functionality
+```
+poetry run flask --app provider --debug run
+```
+
+You can now test the endpoint like so:
+```bash
+  curl --request POST \
+    --url http://localhost:5000/search \
+    --header 'Content-Type: application/json' \
+    --header 'Authorization: Bearer {PINECONE_CONNECTOR_API_KEY} \
+    --data '{
+    "query": "BBQ"
+  }'
+```
+
 ## Deployment
 
 Uses Vercel for quick deployment
