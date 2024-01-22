@@ -1,8 +1,10 @@
 ### Penn Courses LLM 📚
 
+Check it out: https://penn-courses-llm.vercel.app/
 
 <img width="1728" alt="Screenshot 2024-01-22 at 5 54 51 AM" src="https://github.com/trangiabach/Penn-Courses-LLM/assets/62537937/88206503-9dc5-4b1b-9d94-07524149bb27">
 
+Link: https://penn-courses-llm.vercel.app/
 
 Penn Course LLM (PCL) is a RAG-baed Chatbot built to help Penn students search, pland and explore courses at UPenn more easily. Users can interact with the RAG-based LLM chats, save their interaction sessions and share their sessions via a public link.
 
