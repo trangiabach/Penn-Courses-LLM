@@ -87,14 +87,14 @@ Create a virtual environment and install dependencies with poetry. We recommend 
 ```
 
 The `generate_embeddings.py` script will generate embeddings for the BBQ dataset
-and save them to a file called `bbq_embeddings.json`
+and save them to a file called `courses_embeddings.json`
 
 ```
 $ poetry shell
 $ python dev/generate_embeddings.py
 ```
 
-The `load_data.py` script will load vectors from the `bbq_embeddings.json` file into Pinecone and will generate an
+The `load_data.py` script will load vectors from the `courses_embeddings.json` file into Pinecone and will generate an
 appropriate index if one doesn't already exist.
 
 ```
