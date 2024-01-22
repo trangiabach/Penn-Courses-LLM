@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST="{\n  \"pages\": {},\n  \"app\": {},\n  \"appUsingSizeAdjust\": false,\n  \"pagesUsingSizeAdjust\": false\n}"
+self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/Users/bachtran/Penn-Courses-LLM/app/layout":["static/media/f980ec13b5b5e554.p.woff2","static/media/ec1a1eae803b668e-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
