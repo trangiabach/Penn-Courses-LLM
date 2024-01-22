@@ -1131,7 +1131,7 @@ function UserMenu({ user }) {
                         children: [
                             user?.image ? /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                 className: "w-6 h-6 transition-opacity duration-300 rounded-full select-none ring-1 ring-zinc-100/10 hover:opacity-80",
-                                src: user?.image ? `${user.image}&s=60` : '',
+                                src: user?.image ? `${user.image}` : '',
                                 alt: user.name ?? 'Avatar',
                                 height: 48,
                                 width: 48
@@ -1204,12 +1204,12 @@ function UserMenu({ user }) {
                         /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
                             asChild: true,
                             children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"]("a", {
-                                href: "https://vercel.com",
+                                href: "https://github.com/trangiabach/Penn-Courses-LLM",
                                 target: "_blank",
                                 rel: "noopener noreferrer",
                                 className: "inline-flex items-center justify-between w-full text-xs",
                                 children: [
-                                    "Vercel Homepage",
+                                    "Contribute on Github",
                                     /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["IconExternalLink"], {
                                         className: "w-3 h-3 ml-auto"
                                     }, void 0, false, {
@@ -3534,44 +3534,34 @@ __turbopack_esm__({
     "ExternalLink": ()=>ExternalLink
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$go$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-icons/go/index.mjs [app-ssr] (ecmascript)");
 "__TURBOPACK__ecmascript__hoisting__location__";
+;
 ;
 function ExternalLink({ href, children }) {
     return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"]("a", {
         href: href,
         target: "_blank",
-        className: "inline-flex flex-1 justify-center gap-1 leading-4 hover:underline",
+        className: "inline-flex flex-1 justify-center gap-1 leading-4 underline transition-colors hover:text-primary",
         children: [
             /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"]("span", {
                 children: children
             }, void 0, false, {
                 fileName: "<[project]/components/external-link.tsx>",
-                lineNumber: 14,
+                lineNumber: 16,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"]("svg", {
-                "aria-hidden": "true",
-                height: "7",
-                viewBox: "0 0 6 6",
-                width: "7",
-                className: "opacity-70",
-                children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"]("path", {
-                    d: "M1.25215 5.54731L0.622742 4.9179L3.78169 1.75597H1.3834L1.38936 0.890915H5.27615V4.78069H4.40513L4.41109 2.38538L1.25215 5.54731Z",
-                    fill: "currentColor"
-                }, void 0, false, {
-                    fileName: "<[project]/components/external-link.tsx>",
-                    lineNumber: 22,
-                    columnNumber: 9
-                }, this)
+            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$go$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["GoLinkExternal"], {
+                size: 11
             }, void 0, false, {
                 fileName: "<[project]/components/external-link.tsx>",
-                lineNumber: 15,
+                lineNumber: 17,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/external-link.tsx>",
-        lineNumber: 9,
+        lineNumber: 11,
         columnNumber: 5
     }, this);
 }
@@ -3595,14 +3585,34 @@ function FooterText({ className, ...props }) {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"]('px-2 text-center text-xs leading-normal text-muted-foreground', className),
         ...props,
         children: [
-            "Open source AI chatbot built with",
+            "Built with ❤️ by",
             ' ',
+            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$external$2d$link$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ExternalLink"], {
+                href: "https://github.com/trangiabach",
+                children: "Bach"
+            }, void 0, false, {
+                fileName: "<[project]/components/footer.tsx>",
+                lineNumber: 16,
+                columnNumber: 7
+            }, this),
+            ' ',
+            "with ",
             /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$external$2d$link$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ExternalLink"], {
                 href: "https://nextjs.org",
                 children: "Next.js"
             }, void 0, false, {
                 fileName: "<[project]/components/footer.tsx>",
-                lineNumber: 16,
+                lineNumber: 17,
+                columnNumber: 12
+            }, this),
+            ",",
+            ' ',
+            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$external$2d$link$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ExternalLink"], {
+                href: "https://cohere.com/",
+                children: "Cohere AI"
+            }, void 0, false, {
+                fileName: "<[project]/components/footer.tsx>",
+                lineNumber: 18,
                 columnNumber: 7
             }, this),
             " and",
@@ -3612,7 +3622,7 @@ function FooterText({ className, ...props }) {
                 children: "Vercel KV"
             }, void 0, false, {
                 fileName: "<[project]/components/footer.tsx>",
-                lineNumber: 17,
+                lineNumber: 19,
                 columnNumber: 7
             }, this),
             "."
@@ -3808,24 +3818,25 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/ui/button.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$external$2d$link$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/external-link.tsx [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/ui/icons.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa6$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-icons/fa6/index.mjs [app-ssr] (ecmascript)");
 "__TURBOPACK__ecmascript__hoisting__location__";
+'use client';
 ;
 ;
 ;
 ;
 const exampleMessages = [
     {
-        heading: 'Explain technical concepts',
-        message: `What is a "serverless function"?`
+        heading: '📸 Find some courses on photography + ML',
+        message: `Find some courses on photography + ML"?`
     },
     {
-        heading: 'Summarize an article',
-        message: 'Summarize the following article for a 2nd grader: \n'
+        heading: '💻 What is CIS3500 about?',
+        message: 'What is CIS3500 about?'
     },
     {
-        heading: 'Draft an email',
-        message: `Draft an email to my boss about the following: \n`
+        heading: '🤔 Wonder if there are any half-semester classes?',
+        message: 'Wonder if there are any half-semester classes?'
     }
 ];
 function EmptyScreen({ setInput }) {
@@ -3834,87 +3845,95 @@ function EmptyScreen({ setInput }) {
         children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
             className: "rounded-lg border bg-background p-8",
             children: [
-                /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"]("h1", {
-                    className: "mb-2 text-lg font-semibold",
-                    children: "Welcome to Next.js AI Chatbot!"
-                }, void 0, false, {
-                    fileName: "<[project]/components/empty-screen.tsx>",
-                    lineNumber: 26,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"]("p", {
-                    className: "mb-2 leading-normal text-muted-foreground",
+                /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "flex gap-2 items-center mb-2",
                     children: [
-                        "This is an open source AI chatbot app template built with",
-                        ' ',
-                        /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$external$2d$link$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ExternalLink"], {
-                            href: "https://nextjs.org",
-                            children: "Next.js"
+                        /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa6$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaWandMagicSparkles"], {
+                            className: "text-primary"
                         }, void 0, false, {
                             fileName: "<[project]/components/empty-screen.tsx>",
-                            lineNumber: 31,
+                            lineNumber: 29,
                             columnNumber: 11
                         }, this),
-                        " and",
-                        ' ',
-                        /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$external$2d$link$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ExternalLink"], {
-                            href: "https://vercel.com/storage/kv",
-                            children: "Vercel KV"
-                        }, void 0, false, {
+                        /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"]("h1", {
+                            className: "text-lg font-semibold",
+                            children: [
+                                "Welcome to",
+                                ' ',
+                                /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"]("span", {
+                                    className: "text-primary",
+                                    children: "Penn Course LLM - PCL!"
+                                }, void 0, false, {
+                                    fileName: "<[project]/components/empty-screen.tsx>",
+                                    lineNumber: 32,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
                             fileName: "<[project]/components/empty-screen.tsx>",
-                            lineNumber: 32,
+                            lineNumber: 30,
                             columnNumber: 11
-                        }, this),
-                        "."
+                        }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/empty-screen.tsx>",
-                    lineNumber: 29,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"]("p", {
-                    className: "leading-normal text-muted-foreground",
-                    children: "You can start a conversation here or try the following examples:"
+                    className: "mb-2 leading-normal text-muted-foreground text-sm",
+                    children: [
+                        "PCL is an open-source chatbot built over data from",
+                        ' ',
+                        /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$external$2d$link$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ExternalLink"], {
+                            href: "https://courses.upenn.edu/",
+                            children: "Penn Course Directory"
+                        }, void 0, false, {
+                            fileName: "<[project]/components/empty-screen.tsx>",
+                            lineNumber: 37,
+                            columnNumber: 11
+                        }, this),
+                        ", use it to search courses efficient, plan your semester, ask about requirements or anything Penn Courses related. All powered by the power of LLMs."
+                    ]
+                }, void 0, true, {
+                    fileName: "<[project]/components/empty-screen.tsx>",
+                    lineNumber: 35,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"]("p", {
+                    className: "leading-normal font-semibold text-sm",
+                    children: "Here are some examples to get you started:"
                 }, void 0, false, {
                     fileName: "<[project]/components/empty-screen.tsx>",
-                    lineNumber: 37,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
-                    className: "mt-4 flex flex-col items-start space-y-2",
+                    className: "mt-4 flex items-center gap-3",
                     children: exampleMessages.map((message, index)=>/*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                            variant: "link",
-                            className: "h-auto p-0 text-base",
+                            className: "h-auto text-[12px] rounded-3xl border-primary hover:bg-violet-200/25 text-left",
                             onClick: ()=>setInput(message.message),
-                            children: [
-                                /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$icons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["IconArrowRight"], {
-                                    className: "mr-2 text-muted-foreground"
-                                }, void 0, false, {
-                                    fileName: "<[project]/components/empty-screen.tsx>",
-                                    lineNumber: 48,
-                                    columnNumber: 15
-                                }, this),
-                                message.heading
-                            ]
-                        }, index, true, {
+                            variant: "outline",
+                            children: message.heading
+                        }, index, false, {
                             fileName: "<[project]/components/empty-screen.tsx>",
-                            lineNumber: 42,
+                            lineNumber: 49,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "<[project]/components/empty-screen.tsx>",
-                    lineNumber: 40,
+                    lineNumber: 47,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/empty-screen.tsx>",
-            lineNumber: 25,
+            lineNumber: 27,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/empty-screen.tsx>",
-        lineNumber: 24,
+        lineNumber: 26,
         columnNumber: 5
     }, this);
 }

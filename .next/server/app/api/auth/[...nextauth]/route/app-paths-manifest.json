@@ -1,3 +1,3 @@
-{
-  "/api/auth/[...nextauth]/route": "app-edge-has-no-entrypoint"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9a446b8a3f86aeabe145551df0a3b79ce20df3695343c8a355b145cc67bbba84
+size 67

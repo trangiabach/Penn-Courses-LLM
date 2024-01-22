@@ -1,3 +1,5 @@
+'use client'
+
 import {
   Card,
   CardContent,
@@ -6,6 +8,10 @@ import {
   CardTitle
 } from './ui/card'
 import { FaWandMagicSparkles } from 'react-icons/fa6'
+import { FcGoogle } from 'react-icons/fc'
+import { signIn } from 'next-auth/react'
+import React from 'react'
+import { IconSpinner } from './ui/icons'
 
 const authenticatedAdvantages = [
   {
@@ -24,14 +30,17 @@ const authenticatedAdvantages = [
 ]
 
 export function SidebarAnonymousContent() {
+  const [isLoading, setIsLoading] = React.useState<boolean>(false)
+
   return (
-    <Card className="mx-2 border bg-background shadow-none">
+    <Card className="mx-2 border bg-zinc-50 shadow-none">
       <CardHeader>
-        <CardTitle>
+        <CardTitle className="flex gap-1">
           Log in to enjoy{' '}
           <span className="text-primary flex gap-1">
-            PCL <FaWandMagicSparkles />
-          </span>
+            PCL
+            <FaWandMagicSparkles />
+          </span>{' '}
           fully!
         </CardTitle>
         <CardDescription>
@@ -39,6 +48,26 @@ export function SidebarAnonymousContent() {
         </CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4">
+        <div
+          className=" flex items-center justify-between space-x-4 rounded-md border p-4 cursor-pointer transition-colors hover:bg-zinc-200/40"
+          onClick={() => {
+            setIsLoading(true)
+            signIn('google', { callbackUrl: `/` })
+            setIsLoading(false)
+          }}
+        >
+          {isLoading ? (
+            <IconSpinner className="mr-2 animate-spin" />
+          ) : (
+            <FcGoogle size={20} />
+          )}
+          <div className="flex-1 space-y-1">
+            <p className="text-sm font-medium leading-none">Log in now</p>
+            <p className="text-sm text-muted-foreground">
+              Log in with your Google account.
+            </p>
+          </div>
+        </div>
         <div>
           {authenticatedAdvantages.map((advantage, index) => {
             return (

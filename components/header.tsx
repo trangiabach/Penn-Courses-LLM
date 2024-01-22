@@ -20,6 +20,7 @@ import { UserMenu } from '@/components/user-menu'
 import { SidebarMobile } from './sidebar-mobile'
 import { SidebarToggle } from './sidebar-toggle'
 import { ChatHistory } from './chat-history'
+import { FaWandMagicSparkles, FaArrowRightToBracket } from 'react-icons/fa6'
 
 async function UserOrLogin() {
   const session = await auth()
@@ -34,17 +35,24 @@ async function UserOrLogin() {
         </>
       ) : (
         <Link href="/" target="_blank" rel="nofollow">
-          <IconNextChat className="w-6 h-6 mr-2 dark:hidden" inverted />
-          <IconNextChat className="hidden w-6 h-6 mr-2 dark:block" />
+          <div className="font-semibold text-primary flex gap-x-2 items-center">
+            <FaWandMagicSparkles />
+            Penn Courses LLM
+          </div>
         </Link>
       )}
-      <div className="flex items-center">
+      <div className="flex items-center gap-4">
         <IconSeparator className="w-6 h-6 text-muted-foreground/50" />
         {session?.user ? (
           <UserMenu user={session.user} />
         ) : (
-          <Button variant="link" asChild className="-ml-2">
-            <Link href="/sign-in?callbackUrl=/">Login</Link>
+          <Button variant="outline" asChild className="-ml-2">
+            <Link
+              className="flex items-center gap-x-2"
+              href="/sign-in?callbackUrl=/"
+            >
+              Login <FaArrowRightToBracket />
+            </Link>
           </Button>
         )}
       </div>
@@ -62,22 +70,13 @@ export function Header() {
       </div>
       <div className="flex items-center justify-end space-x-2">
         <a
-          target="_blank"
-          href="https://github.com/vercel/nextjs-ai-chatbot/"
-          rel="noopener noreferrer"
-          className={cn(buttonVariants({ variant: 'outline' }))}
-        >
-          <IconGitHub />
-          <span className="hidden ml-2 md:flex">GitHub</span>
-        </a>
-        <a
-          href="https://github.com/vercel/nextjs-ai-chatbot/"
+          href="https://github.com/trangiabach/Penn-Courses-LLM"
           target="_blank"
           className={cn(buttonVariants())}
         >
-          <IconVercel className="mr-2" />
-          <span className="hidden sm:block">Deploy to Vercel</span>
-          <span className="sm:hidden">Deploy</span>
+          <IconGitHub className="mr-2" />
+          <span className="hidden sm:block">Contribute on Github</span>
+          <span className="sm:hidden">Contribute</span>
         </a>
       </div>
     </header>

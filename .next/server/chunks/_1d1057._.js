@@ -157,14 +157,14 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$7b$module__evaluation$7d$__ = __turbopack_import__("[project]/node_modules/next-auth/index.js [app-rsc] (ecmascript) {module evaluation}");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$7b$export__NextAuth__as__default$7d$__ = __turbopack_import__("[project]/node_modules/next-auth/index.js [app-rsc] (ecmascript) {export NextAuth as default}");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$providers$2f$github$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$7b$module__evaluation$7d$__ = __turbopack_import__("[project]/node_modules/next-auth/providers/github.js [app-rsc] (ecmascript) {module evaluation}");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$auth$2f$core$2f$providers$2f$github$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@auth/core/providers/github.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$providers$2f$google$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$7b$module__evaluation$7d$__ = __turbopack_import__("[project]/node_modules/next-auth/providers/google.js [app-rsc] (ecmascript) {module evaluation}");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$auth$2f$core$2f$providers$2f$google$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@auth/core/providers/google.js [app-rsc] (ecmascript)");
 "__TURBOPACK__ecmascript__hoisting__location__";
 ;
 ;
 const { handlers: { GET, POST }, auth } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$7b$export__NextAuth__as__default$7d$__["default"]({
     providers: [
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$auth$2f$core$2f$providers$2f$github$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$auth$2f$core$2f$providers$2f$google$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"]
     ],
     callbacks: {
         jwt ({ token, profile }) {
@@ -791,7 +791,9 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/future/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/ui/card.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa6$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-icons/fa6/index.mjs [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fc$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-icons/fc/index.mjs [app-rsc] (ecmascript)");
 "__TURBOPACK__ecmascript__hoisting__location__";
+;
 ;
 ;
 ;
@@ -811,109 +813,154 @@ const authenticatedAdvantages = [
 ];
 function SidebarAnonymousContent() {
     return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
-        className: "mx-2 border bg-background shadow-none",
+        className: "mx-2 border bg-zinc-50 shadow-none",
         children: [
             /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardHeader"], {
                 children: [
                     /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardTitle"], {
+                        className: "flex gap-1",
                         children: [
                             "Log in to enjoy",
                             ' ',
                             /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("span", {
                                 className: "text-primary flex gap-1",
                                 children: [
-                                    "PCL ",
+                                    "PCL",
                                     /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa6$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["FaWandMagicSparkles"], {}, void 0, false, {
                                         fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
-                                        lineNumber: 33,
-                                        columnNumber: 17
+                                        lineNumber: 35,
+                                        columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
-                                lineNumber: 32,
+                                lineNumber: 33,
                                 columnNumber: 11
                             }, this),
+                            ' ',
                             "fully!"
                         ]
                     }, void 0, true, {
                         fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
-                        lineNumber: 30,
+                        lineNumber: 31,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardDescription"], {
                         children: "As an authenticated user, you can enjoy the fullest of PCL's features."
                     }, void 0, false, {
                         fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
-                        lineNumber: 37,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
-                lineNumber: 29,
+                lineNumber: 30,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardContent"], {
                 className: "grid gap-4",
-                children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
-                    children: authenticatedAdvantages.map((advantage, index)=>{
-                        return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
-                            className: "mb-4 grid grid-cols-[25px_1fr] items-start pb-4 last:mb-0 last:pb-0",
-                            children: [
-                                /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("span", {
-                                    className: "flex h-2 w-2 translate-y-1 rounded-full bg-primary"
-                                }, void 0, false, {
-                                    fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
-                                    lineNumber: 49,
-                                    columnNumber: 17
-                                }, this),
-                                /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
-                                    className: "space-y-1",
-                                    children: [
-                                        /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("p", {
-                                            className: "text-sm font-medium leading-none",
-                                            children: advantage.title
-                                        }, void 0, false, {
-                                            fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
-                                            lineNumber: 51,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("p", {
-                                            className: "text-sm text-muted-foreground",
-                                            children: advantage.description
-                                        }, void 0, false, {
-                                            fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
-                                            lineNumber: 54,
-                                            columnNumber: 19
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
-                                    lineNumber: 50,
-                                    columnNumber: 17
-                                }, this)
-                            ]
-                        }, index, true, {
-                            fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
-                            lineNumber: 45,
-                            columnNumber: 15
-                        }, this);
-                    })
-                }, void 0, false, {
-                    fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
-                    lineNumber: 42,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
+                children: [
+                    /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        className: " flex items-center justify-between space-x-4 rounded-md border p-4 cursor-pointer transition-colors hover:bg-zinc-200/40",
+                        children: [
+                            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fc$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["FcGoogle"], {
+                                size: 20
+                            }, void 0, false, {
+                                fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
+                                lineNumber: 45,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                className: "flex-1 space-y-1",
+                                children: [
+                                    /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("p", {
+                                        className: "text-sm font-medium leading-none",
+                                        children: "Log in now"
+                                    }, void 0, false, {
+                                        fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
+                                        lineNumber: 47,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("p", {
+                                        className: "text-sm text-muted-foreground",
+                                        children: "Log in with your Google account."
+                                    }, void 0, false, {
+                                        fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
+                                        lineNumber: 48,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
+                                lineNumber: 46,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
+                        lineNumber: 44,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        children: authenticatedAdvantages.map((advantage, index)=>{
+                            return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                className: "mb-4 grid grid-cols-[25px_1fr] items-start pb-4 last:mb-0 last:pb-0",
+                                children: [
+                                    /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("span", {
+                                        className: "flex h-2 w-2 translate-y-1 rounded-full bg-primary"
+                                    }, void 0, false, {
+                                        fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
+                                        lineNumber: 60,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                        className: "space-y-1",
+                                        children: [
+                                            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("p", {
+                                                className: "text-sm font-medium leading-none",
+                                                children: advantage.title
+                                            }, void 0, false, {
+                                                fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
+                                                lineNumber: 62,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("p", {
+                                                className: "text-sm text-muted-foreground",
+                                                children: advantage.description
+                                            }, void 0, false, {
+                                                fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
+                                                lineNumber: 65,
+                                                columnNumber: 19
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
+                                        lineNumber: 61,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, index, true, {
+                                fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
+                                lineNumber: 56,
+                                columnNumber: 15
+                            }, this);
+                        })
+                    }, void 0, false, {
+                        fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
+                        lineNumber: 53,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
-                lineNumber: 41,
+                lineNumber: 43,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/sidebar-anonymous-content.tsx>",
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 5
     }, this);
 }
@@ -1035,7 +1082,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$user$2d$menu$2
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$sidebar$2d$mobile$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/sidebar-mobile.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$sidebar$2d$toggle$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/sidebar-toggle.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$chat$2d$history$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/chat-history.tsx [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa6$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-icons/fa6/index.mjs [app-rsc] (ecmascript)");
 "__TURBOPACK__ecmascript__hoisting__location__";
+;
 ;
 ;
 ;
@@ -1058,17 +1107,17 @@ async function UserOrLogin() {
                             userId: session.user.id
                         }, void 0, false, {
                             fileName: "<[project]/components/header.tsx>",
-                            lineNumber: 31,
+                            lineNumber: 32,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "<[project]/components/header.tsx>",
-                        lineNumber: 30,
+                        lineNumber: 31,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$sidebar$2d$toggle$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SidebarToggle"], {}, void 0, false, {
                         fileName: "<[project]/components/header.tsx>",
-                        lineNumber: 33,
+                        lineNumber: 34,
                         columnNumber: 11
                     }, this)
                 ]
@@ -1076,65 +1125,71 @@ async function UserOrLogin() {
                 href: "/",
                 target: "_blank",
                 rel: "nofollow",
-                children: [
-                    /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconNextChat"], {
-                        className: "w-6 h-6 mr-2 dark:hidden",
-                        inverted: true
-                    }, void 0, false, {
-                        fileName: "<[project]/components/header.tsx>",
-                        lineNumber: 37,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconNextChat"], {
-                        className: "hidden w-6 h-6 mr-2 dark:block"
-                    }, void 0, false, {
-                        fileName: "<[project]/components/header.tsx>",
-                        lineNumber: 38,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true, {
+                children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "font-semibold text-primary flex gap-x-2 items-center",
+                    children: [
+                        /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa6$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["FaWandMagicSparkles"], {}, void 0, false, {
+                            fileName: "<[project]/components/header.tsx>",
+                            lineNumber: 39,
+                            columnNumber: 13
+                        }, this),
+                        "Penn Courses LLM"
+                    ]
+                }, void 0, true, {
+                    fileName: "<[project]/components/header.tsx>",
+                    lineNumber: 38,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
                 fileName: "<[project]/components/header.tsx>",
-                lineNumber: 36,
+                lineNumber: 37,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
-                className: "flex items-center",
+                className: "flex items-center gap-4",
                 children: [
                     /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconSeparator"], {
                         className: "w-6 h-6 text-muted-foreground/50"
                     }, void 0, false, {
                         fileName: "<[project]/components/header.tsx>",
-                        lineNumber: 42,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, this),
                     session?.user ? /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$user$2d$menu$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["UserMenu"], {
                         user: session.user
                     }, void 0, false, {
                         fileName: "<[project]/components/header.tsx>",
-                        lineNumber: 44,
+                        lineNumber: 47,
                         columnNumber: 11
                     }, this) : /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
-                        variant: "link",
+                        variant: "outline",
                         asChild: true,
                         className: "-ml-2",
                         children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                            className: "flex items-center gap-x-2",
                             href: "/sign-in?callbackUrl=/",
-                            children: "Login"
-                        }, void 0, false, {
+                            children: [
+                                "Login ",
+                                /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa6$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["FaArrowRightToBracket"], {}, void 0, false, {
+                                    fileName: "<[project]/components/header.tsx>",
+                                    lineNumber: 54,
+                                    columnNumber: 21
+                                }, this)
+                            ]
+                        }, void 0, true, {
                             fileName: "<[project]/components/header.tsx>",
-                            lineNumber: 47,
+                            lineNumber: 50,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "<[project]/components/header.tsx>",
-                        lineNumber: 46,
+                        lineNumber: 49,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "<[project]/components/header.tsx>",
-                lineNumber: 41,
+                lineNumber: 44,
                 columnNumber: 7
             }, this)
         ]
@@ -1151,98 +1206,69 @@ function Header() {
                         className: "flex-1 overflow-auto"
                     }, void 0, false, {
                         fileName: "<[project]/components/header.tsx>",
-                        lineNumber: 59,
+                        lineNumber: 67,
                         columnNumber: 35
                     }, void 0),
                     children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](UserOrLogin, {}, void 0, false, {
                         fileName: "<[project]/components/header.tsx>",
-                        lineNumber: 60,
+                        lineNumber: 68,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "<[project]/components/header.tsx>",
-                    lineNumber: 59,
+                    lineNumber: 67,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/components/header.tsx>",
-                lineNumber: 58,
+                lineNumber: 66,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
                 className: "flex items-center justify-end space-x-2",
-                children: [
-                    /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("a", {
-                        target: "_blank",
-                        href: "https://github.com/vercel/nextjs-ai-chatbot/",
-                        rel: "noopener noreferrer",
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["cn"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["buttonVariants"]({
-                            variant: 'outline'
-                        })),
-                        children: [
-                            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconGitHub"], {}, void 0, false, {
-                                fileName: "<[project]/components/header.tsx>",
-                                lineNumber: 70,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("span", {
-                                className: "hidden ml-2 md:flex",
-                                children: "GitHub"
-                            }, void 0, false, {
-                                fileName: "<[project]/components/header.tsx>",
-                                lineNumber: 71,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "<[project]/components/header.tsx>",
-                        lineNumber: 64,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("a", {
-                        href: "https://github.com/vercel/nextjs-ai-chatbot/",
-                        target: "_blank",
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["cn"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["buttonVariants"]()),
-                        children: [
-                            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconVercel"], {
-                                className: "mr-2"
-                            }, void 0, false, {
-                                fileName: "<[project]/components/header.tsx>",
-                                lineNumber: 78,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("span", {
-                                className: "hidden sm:block",
-                                children: "Deploy to Vercel"
-                            }, void 0, false, {
-                                fileName: "<[project]/components/header.tsx>",
-                                lineNumber: 79,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("span", {
-                                className: "sm:hidden",
-                                children: "Deploy"
-                            }, void 0, false, {
-                                fileName: "<[project]/components/header.tsx>",
-                                lineNumber: 80,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "<[project]/components/header.tsx>",
-                        lineNumber: 73,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
+                children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("a", {
+                    href: "https://github.com/trangiabach/Penn-Courses-LLM",
+                    target: "_blank",
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["cn"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["buttonVariants"]()),
+                    children: [
+                        /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconGitHub"], {
+                            className: "mr-2"
+                        }, void 0, false, {
+                            fileName: "<[project]/components/header.tsx>",
+                            lineNumber: 77,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("span", {
+                            className: "hidden sm:block",
+                            children: "Contribute on Github"
+                        }, void 0, false, {
+                            fileName: "<[project]/components/header.tsx>",
+                            lineNumber: 78,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("span", {
+                            className: "sm:hidden",
+                            children: "Contribute"
+                        }, void 0, false, {
+                            fileName: "<[project]/components/header.tsx>",
+                            lineNumber: 79,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "<[project]/components/header.tsx>",
+                    lineNumber: 72,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
                 fileName: "<[project]/components/header.tsx>",
-                lineNumber: 63,
+                lineNumber: 71,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/header.tsx>",
-        lineNumber: 57,
+        lineNumber: 65,
         columnNumber: 5
     }, this);
 }

@@ -9,16 +9,16 @@ import { Providers } from '@/components/providers'
 import { Header } from '@/components/header'
 
 export const metadata = {
-  metadataBase: new URL(`https://${process.env.VERCEL_URL}`),
   title: {
-    default: 'Next.js AI Chatbot',
-    template: `%s - Next.js AI Chatbot`
+    default: 'Penn Courses LLM',
+    template: `%s - Penn Courses LLM`
   },
-  description: 'An AI-powered chatbot template built with Next.js and Vercel.',
+  description:
+    'PCL is a LLM-powered tool that helps students answer any questions about courses at UPenn. Ask about courses that fit your interest, plan your semester or simply explore the plethora of diverse courses at UPenn.',
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png'
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg'
   }
 }
 
@@ -54,7 +54,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <Header />
             <main className="flex flex-col flex-1 bg-muted/50">{children}</main>
           </div>
-          <TailwindIndicator />
         </Providers>
       </body>
     </html>

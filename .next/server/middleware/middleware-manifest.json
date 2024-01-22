@@ -1,28 +1,3 @@
-{
-  "sorted_middleware": [],
-  "middleware": {
-    "/": {
-      "files": [
-        "server/edge/chunks/_78b381._.js",
-        "server/edge/chunks/node_modules_@auth_core_947841._.js",
-        "server/edge/chunks/node_modules_jose_dist_browser_91487b._.js",
-        "server/edge/chunks/node_modules_react_9d5f17._.js",
-        "server/edge/chunks/node_modules_6be2e2._.js",
-        "server/edge/chunks/_907b08._.js",
-        "server/edge/chunks/edge-wrapper_074a41.js",
-        "server/edge/chunks/edge-wrapper_e34757.js"
-      ],
-      "name": "middleware",
-      "page": "/",
-      "matchers": [
-        {
-          "regexp": "^/.*$",
-          "locale": false,
-          "originalSource": "/:path*"
-        }
-      ]
-    }
-  },
-  "instrumentation": null,
-  "functions": {}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0b8b5561ab36a53019e9ae4a46f33f162ed6d7ef585d554d41d951fd10f89514
+size 776

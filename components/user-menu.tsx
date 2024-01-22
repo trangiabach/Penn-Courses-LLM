@@ -32,7 +32,7 @@ export function UserMenu({ user }: UserMenuProps) {
             {user?.image ? (
               <Image
                 className="w-6 h-6 transition-opacity duration-300 rounded-full select-none ring-1 ring-zinc-100/10 hover:opacity-80"
-                src={user?.image ? `${user.image}&s=60` : ''}
+                src={user?.image ? `${user.image}` : ''}
                 alt={user.name ?? 'Avatar'}
                 height={48}
                 width={48}
@@ -53,12 +53,12 @@ export function UserMenu({ user }: UserMenuProps) {
           <DropdownMenuSeparator />
           <DropdownMenuItem asChild>
             <a
-              href="https://vercel.com"
+              href="https://github.com/trangiabach/Penn-Courses-LLM"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-between w-full text-xs"
             >
-              Vercel Homepage
+              Contribute on Github
               <IconExternalLink className="w-3 h-3 ml-auto" />
             </a>
           </DropdownMenuItem>

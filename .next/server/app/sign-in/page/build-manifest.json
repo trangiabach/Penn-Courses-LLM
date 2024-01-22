@@ -1,20 +1,3 @@
-{
-  "devFiles": [],
-  "ampDevFiles": [],
-  "polyfillFiles": [],
-  "lowPriorityFiles": [],
-  "rootMainFiles": [
-    "static/chunks/node_modules_next_dist_compiled_react_a1d82d._.js",
-    "static/chunks/node_modules_next_dist_compiled_react-dom_cjs_react-dom_development_c9a189.js",
-    "static/chunks/node_modules_next_dist_compiled_react-dom_87a050._.js",
-    "static/chunks/node_modules_next_dist_compiled_e13b54._.js",
-    "static/chunks/node_modules_next_dist_client_1fbdd6._.js",
-    "static/chunks/node_modules_next_dist_3a4f0c._.js",
-    "static/chunks/node_modules_@swc_helpers_f2490a._.js",
-    "static/chunks/[turbopack]_dev_client_hmr-client_ts_731de7._.js",
-    "static/chunks/node_modules_next_dist_esm_build_templates_app-page_ef19dd.js",
-    "static/chunks/node_modules_next_dist_esm_build_templates_app-page_b1cc17.js"
-  ],
-  "pages": {},
-  "ampFirstPages": []
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:591a9f718df6693a46ce15914e0d380c8cf8bcbaa459265d69bea41d9b6493ab
+size 877

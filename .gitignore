@@ -1,3 +1,6 @@
 .vercel
 .env*.local
 node_modules
+cohere-connector/.venv
+cohere-connector/.env
+.next

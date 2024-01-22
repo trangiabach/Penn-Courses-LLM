@@ -8,6 +8,7 @@ import { ButtonScrollToBottom } from '@/components/button-scroll-to-bottom'
 import { IconRefresh, IconShare, IconStop } from '@/components/ui/icons'
 import { FooterText } from '@/components/footer'
 import { ChatShareDialog } from '@/components/chat-share-dialog'
+import { AiOutlineLoading } from 'react-icons/ai'
 
 export interface ChatPanelProps
   extends Pick<
@@ -48,7 +49,7 @@ export function ChatPanel({
               onClick={() => stop()}
               className="bg-background"
             >
-              <IconStop className="mr-2" />
+              <AiOutlineLoading className="mr-2 animate-spin" />
               Stop generating
             </Button>
           ) : (

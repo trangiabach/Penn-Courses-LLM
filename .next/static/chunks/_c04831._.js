@@ -1226,7 +1226,7 @@ function UserMenu({ user }) {
                         children: [
                             user?.image ? /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 className: "w-6 h-6 transition-opacity duration-300 rounded-full select-none ring-1 ring-zinc-100/10 hover:opacity-80",
-                                src: user?.image ? `${user.image}&s=60` : '',
+                                src: user?.image ? `${user.image}` : '',
                                 alt: user.name ?? 'Avatar',
                                 height: 48,
                                 width: 48
@@ -1299,12 +1299,12 @@ function UserMenu({ user }) {
                         /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
                             asChild: true,
                             children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"]("a", {
-                                href: "https://vercel.com",
+                                href: "https://github.com/trangiabach/Penn-Courses-LLM",
                                 target: "_blank",
                                 rel: "noopener noreferrer",
                                 className: "inline-flex items-center justify-between w-full text-xs",
                                 children: [
-                                    "Vercel Homepage",
+                                    "Contribute on Github",
                                     /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$icons$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IconExternalLink"], {
                                         className: "w-3 h-3 ml-auto"
                                     }, void 0, false, {
@@ -2993,7 +2993,7 @@ var _s = __turbopack_refresh__.signature();
 ;
 ;
 ;
-function LoginButton({ text = 'Login with GitHub', showGithubIcon = true, className, ...props }) {
+function LoginButton({ text = 'Login with Google', showGithubIcon = true, className, ...props }) {
     _s();
     const [isLoading, setIsLoading] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__.useState(false);
     return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -3001,7 +3001,7 @@ function LoginButton({ text = 'Login with GitHub', showGithubIcon = true, classN
         onClick: ()=>{
             setIsLoading(true);
             // next-auth signIn() function doesn't work yet at Edge Runtime due to usage of BroadcastChannel
-            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["signIn"]('github', {
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["signIn"]('google', {
                 callbackUrl: `/`
             });
         },

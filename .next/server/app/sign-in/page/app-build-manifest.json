@@ -1,32 +1,3 @@
-{
-  "pages": {
-    "/sign-in/page": [
-      "static/chunks/_c04831._.js",
-      "static/chunks/node_modules_next_dist_compiled_react_0bfca7._.js",
-      "static/chunks/node_modules_next_dist_compiled_react-dom_cjs_react-dom_development_c9a189.js",
-      "static/chunks/node_modules_next_dist_compiled_react-dom_index_99aff8.js",
-      "static/chunks/node_modules_next_dist_compiled_micromatch_index_cf75e5.js",
-      "static/chunks/node_modules_next_dist_compiled_6f7b2b._.js",
-      "static/chunks/node_modules_next_dist_shared_lib_b68b42._.js",
-      "static/chunks/node_modules_next_dist_client_ee2138._.js",
-      "static/chunks/node_modules_next_dist_002f49._.js",
-      "static/chunks/node_modules_next_c30e96._.js",
-      "static/chunks/node_modules_tailwind-merge_dist_bundle-mjs_mjs_b854ac._.js",
-      "static/chunks/node_modules_framer-motion_dist_es_232e77._.js",
-      "static/chunks/node_modules_b64f02._.js",
-      "static/chunks/_12238a._.css",
-      "static/chunks/[turbopack]_dev_client_hmr-client_ts_c646a6._.js",
-      "static/chunks/node_modules_next_dist_esm_build_templates_app-page_be0579.js",
-      "static/chunks/node_modules_next_dist_compiled_react_a1d82d._.js",
-      "static/chunks/node_modules_next_dist_compiled_react-dom_cjs_react-dom_development_c9a189.js",
-      "static/chunks/node_modules_next_dist_compiled_react-dom_87a050._.js",
-      "static/chunks/node_modules_next_dist_compiled_e13b54._.js",
-      "static/chunks/node_modules_next_dist_client_1fbdd6._.js",
-      "static/chunks/node_modules_next_dist_3a4f0c._.js",
-      "static/chunks/node_modules_@swc_helpers_f2490a._.js",
-      "static/chunks/[turbopack]_dev_client_hmr-client_ts_731de7._.js",
-      "static/chunks/node_modules_next_dist_esm_build_templates_app-page_ef19dd.js",
-      "static/chunks/node_modules_next_dist_esm_build_templates_app-page_b1cc17.js"
-    ]
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6c759a0ef646d32fa378229e33d0bc4839fb09d4ceaee4ab9f2f3b6a9c6b8389
+size 2083

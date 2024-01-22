@@ -11,6 +11,7 @@ import {
 } from '@/components/ui/tooltip'
 import { IconArrowElbow, IconPlus } from '@/components/ui/icons'
 import { useRouter } from 'next/navigation'
+import { RiSendPlaneFill } from 'react-icons/ri'
 
 export interface PromptProps
   extends Pick<UseChatHelpers, 'input' | 'setInput'> {
@@ -84,7 +85,7 @@ export function PromptForm({
                 size="icon"
                 disabled={isLoading || input === ''}
               >
-                <IconArrowElbow />
+                <RiSendPlaneFill />
                 <span className="sr-only">Send message</span>
               </Button>
             </TooltipTrigger>

@@ -13,7 +13,7 @@ interface ChatHistoryProps {
   userId?: string
 }
 
-export async function ChatHistory({ userId }: ChatHistoryProps) {
+export function ChatHistory({ userId }: ChatHistoryProps) {
   const isAnonymousUser = userId === anonymousUserId
   return (
     <div className="flex flex-col h-full">

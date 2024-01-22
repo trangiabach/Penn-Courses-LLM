@@ -1,7 +1,7 @@
 (globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([
-    "chunks/edge-wrapper_e34757.js",
+    "chunks/edge-wrapper_65bc28.js",
     {},
-    {"otherChunks":["chunks/_78b381._.js","chunks/node_modules_@auth_core_947841._.js","chunks/node_modules_jose_dist_browser_91487b._.js","chunks/node_modules_react_9d5f17._.js","chunks/node_modules_6be2e2._.js","chunks/_907b08._.js"],"runtimeModuleIds":["[project]/edge-wrapper.js/(MODULE)/[project]/node_modules/next/dist/esm/build/templates/middleware.js/(INNER_MIDDLEWARE_MODULE)/[project]/middleware.ts [middleware] (ecmascript) {facade} (ecmascript) (ecmascript)"]}
+    {"otherChunks":["chunks/_78b381._.js","chunks/node_modules_@auth_core_ead7bb._.js","chunks/node_modules_jose_dist_browser_91487b._.js","chunks/node_modules_react_9d5f17._.js","chunks/node_modules_ec8955._.js","chunks/_907b08._.js"],"runtimeModuleIds":["[project]/edge-wrapper.js/(MODULE)/[project]/node_modules/next/dist/esm/build/templates/middleware.js/(INNER_MIDDLEWARE_MODULE)/[project]/middleware.ts [middleware] (ecmascript) {facade} (ecmascript) (ecmascript)"]}
 ]);
 (() => {
 if (!Array.isArray(globalThis.TURBOPACK)) {
@@ -1467,4 +1467,4 @@ chunksToRegister.forEach(registerChunk);
 })();
 
 
-//# sourceMappingURL=edge-wrapper_e34757.js.map
+//# sourceMappingURL=edge-wrapper_65bc28.js.map

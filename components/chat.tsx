@@ -22,7 +22,7 @@ import { Input } from './ui/input'
 import { toast } from 'react-hot-toast'
 import { usePathname, useRouter } from 'next/navigation'
 
-const IS_PREVIEW = process.env.VERCEL_ENV === 'preview'
+const IS_PREVIEW = false
 export interface ChatProps extends React.ComponentProps<'div'> {
   initialMessages?: Message[]
   id?: string
@@ -77,6 +77,7 @@ export function Chat({ id, initialMessages, className }: ChatProps) {
         messages={messages}
         input={input}
         setInput={setInput}
+        title={messages.length > 0 ? messages[0].content : undefined}
       />
 
       <Dialog open={previewTokenDialog} onOpenChange={setPreviewTokenDialog}>
