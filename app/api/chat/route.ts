@@ -55,7 +55,7 @@ export async function POST(req: Request, res: Response) {
     message: newInput,
     'chat_history': chatHistory,
     'prompt_truncation': "AUTO",
-    'citation_quality': "accurate",
+    'citation_quality': "fast",
     connectors: [{"id":"pcl---pinecone-courses-connector-de9j0d"}],
     temperature: 0.0
   })

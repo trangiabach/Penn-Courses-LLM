@@ -1,20 +1,29 @@
+'use client'
 import { clearChats, getChats } from '@/app/actions'
 import { ClearHistory } from '@/components/clear-history'
 import { SidebarItems } from '@/components/sidebar-items'
-import { ThemeToggle } from '@/components/theme-toggle'
-import { cache } from 'react'
+import { Chat } from '@/lib/types'
+import { usePathname } from 'next/navigation'
+import React, { cache, useEffect } from 'react'
 
 interface SidebarListProps {
   userId?: string
   children?: React.ReactNode
 }
 
-const loadChats = cache(async (userId?: string) => {
-  return await getChats(userId)
-})
+export function SidebarList({ userId }: SidebarListProps) {
+  const [chats, setChats] = React.useState<Chat[]>([])
 
-export async function SidebarList({ userId }: SidebarListProps) {
-  const chats = await loadChats(userId)
+  const pathname = usePathname()
+
+  useEffect(() => {
+    const fetchChats = async () => {
+      const fetchedChats = await getChats()
+      setChats(fetchedChats)
+    }
+
+    fetchChats()
+  }, [pathname])
 
   return (
     <div className="flex flex-1 flex-col overflow-hidden">

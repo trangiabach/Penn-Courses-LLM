@@ -7,14 +7,16 @@ import { kv } from '@vercel/kv'
 import { auth } from '@/auth'
 import { type Chat } from '@/lib/types'
 
-export async function getChats(userId?: string | null) {
-  if (!userId) {
+export async function getChats() {
+  const session = await auth()
+
+  if (!session?.user?.id) {
     return []
   }
 
   try {
     const pipeline = kv.pipeline()
-    const chats: string[] = await kv.zrange(`user:chat:${userId}`, 0, -1, {
+    const chats: string[] = await kv.zrange(`user:chat:${session.user.id}`, 0, -1, {
       rev: true
     })
 
