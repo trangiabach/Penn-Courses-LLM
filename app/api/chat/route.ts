@@ -50,7 +50,7 @@ export async function POST(req: Request, res: Response) {
   const newInput = chatHistory.pop()?.message || '';
 
   const body = JSON.stringify({
-    model: 'command-nightly',
+    model: 'command',
     stream: true,
     message: newInput,
     'chat_history': chatHistory,
