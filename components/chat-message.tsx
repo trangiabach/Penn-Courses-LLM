@@ -1,5 +1,4 @@
-// Inspired by Chatbot-UI and modified to fit the needs of this project
-// @see https://github.com/mckaywrigley/chatbot-ui/blob/main/components/Chat/ChatMessage.tsx
+'use client'
 
 import { Message } from 'ai'
 import remarkGfm from 'remark-gfm'
@@ -12,12 +11,50 @@ import { IconOpenAI, IconUser } from '@/components/ui/icons'
 import { ChatMessageActions } from '@/components/chat-message-actions'
 import { FaWandMagicSparkles } from 'react-icons/fa6'
 import { FaRegUserCircle } from 'react-icons/fa'
+import { useChat } from 'ai/react/dist'
+import { useEffect, useState } from 'react'
+import { getChat } from '@/app/actions'
+import { useParams, usePathname } from 'next/navigation'
+import { auth } from '@/auth'
+import { Card, CardDescription, CardHeader, CardTitle } from './ui/card'
+import { GrResources } from 'react-icons/gr'
+import Link from 'next/link'
 
 export interface ChatMessageProps {
   message: Message
+  isLoading: boolean
 }
 
-export function ChatMessage({ message, ...props }: ChatMessageProps) {
+export interface ChatCitation {
+  author?: string | null
+  id?: string
+  title: string
+  url: string
+}
+
+export function ChatMessage({
+  message,
+  isLoading,
+  ...props
+}: ChatMessageProps) {
+  const params = usePathname()
+  const chatId = params.replace('/chat/', '')
+  const [citations, setCitations] = useState<ChatCitation[]>([])
+
+  useEffect(() => {
+    if (!isLoading && citations.length === 0) {
+      const fetchChat = async () => {
+        const fetchedChat = await getChat(chatId, '')
+        fetchedChat?.messages.map((fetchedMessage: any) => {
+          if (fetchedMessage.content === message.content) {
+            console.log(fetchedMessage)
+            setCitations(fetchedMessage.citations || [])
+          }
+        })
+      }
+      fetchChat()
+    }
+  }, [isLoading, params, chatId])
   return (
     <div
       className={cn('group relative mb-4 flex items-start md:-ml-12')}
@@ -82,6 +119,29 @@ export function ChatMessage({ message, ...props }: ChatMessageProps) {
           {message.content}
         </MemoizedReactMarkdown>
         <ChatMessageActions message={message} />
+        <div className="pt-2" />
+        {citations.length > 0 && (
+          <>
+            <div className="text-primary flex gap-x-2 items-center">
+              <GrResources />
+              Sources
+            </div>
+            <div className="flex flex-wrap flex-row gap-2">
+              {citations.map(citation => (
+                <Link href={citation.url} target="_blank" key={citation.url}>
+                  <Card className="text-xs w-fit max-w-[250px] shadow-none border-gray hover:border-primary transition-colors">
+                    <CardHeader className="p-3">
+                      <CardTitle>{citation.title}</CardTitle>
+                      <CardDescription>
+                        {citation.url.substring(0, 30)}...
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                </Link>
+              ))}
+            </div>
+          </>
+        )}
       </div>
     </div>
   )

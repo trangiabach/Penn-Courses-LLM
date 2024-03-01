@@ -1,86 +1,57 @@
-import { kv } from '@vercel/kv'
-import { OpenAIStream, StreamingTextResponse, Message as VercelChatMessage, CohereStream } from 'ai'
-import OpenAI from 'openai'
+import { NextRequest } from 'next/server';
+import { Message as VercelChatMessage, nanoid, StreamingTextResponse } from 'ai';
+import { PromptTemplate } from 'langchain/prompts';
+import { auth } from '@/auth';
+import { anonymousUserId } from '@/consts/user';
+import { aiPrompt } from '@/consts/prompts';
+import { kv } from '@vercel/kv';
+import { Pinecone } from "@pinecone-database/pinecone"
+import { OpenAIEmbeddings, ChatOpenAI } from '@langchain/openai';
+import { PineconeStore } from "@langchain/pinecone";
+import { RunnableSequence } from "@langchain/core/runnables";
+import { formatDocumentsAsString } from "langchain/util/document";
+import { BytesOutputParser } from "@langchain/core/output_parsers";
+import Exa from "exa-js"
 
-import { auth } from '@/auth'
-import { nanoid } from '@/lib/utils'
-import { anonymousUserId } from '@/consts/user'
-import { ChatCohere } from "@langchain/cohere";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
-import { aiPrompt } from '@/consts/prompts'
-import { CohereClient, Cohere } from "cohere-ai";
+ 
+export const runtime = 'edge';
+ 
+const pinecone = new Pinecone();
+const pineconeIndex = pinecone.Index(process.env.PINECONE_INDEX || '');
+const embeddings = new OpenAIEmbeddings({ modelName: 'text-embedding-ada-002' });
+const exa = new Exa(process.env.EXA_API_KEY)
 
-export const runtime = 'edge'
-
-
-const toCohereRole = (role: string): Cohere.ChatMessageRole => {
-  if (role === 'user') {
-    return Cohere.ChatMessageRole.User;
-  }
-  return Cohere.ChatMessageRole.Chatbot;
+const formatMessage = (message: VercelChatMessage) => {
+  return `${message.role}: ${message.content}`;
 };
 
-const ingestPrompt = (chatHistory: Cohere.ChatMessage[]) => {
-  const doesPromptExist = chatHistory.filter(chat => chat.message === aiPrompt).length > 0;
-
-  if (doesPromptExist) {
-    return chatHistory
-  }
-
-  const newPrompt = {
-    message: aiPrompt,
-    role: Cohere.ChatMessageRole.User
-  }
-
-
-  return [newPrompt, ...chatHistory]
-
-
-}
-
-export async function POST(req: Request, res: Response) {
-  const json = await req.json()
-  const { messages, previewToken } = json
+export async function POST(req: NextRequest) {
+  const body = await req.json();
+  const messages = body.messages ?? [];
+  const formattedPreviousMessages = messages.slice(0, -1).map(formatMessage);
+  const currentMessageContent = messages[messages.length - 1].content;
   const userId = (await auth())?.user.id || anonymousUserId
-  const chatHistory = ingestPrompt(messages.map((message: any) => ({
-    message: message.content,
-    role: toCohereRole(message.role),
-  })));
-  const newInput = chatHistory.pop()?.message || '';
-
-  const body = JSON.stringify({
-    model: 'command',
-    stream: true,
-    message: newInput,
-    'chat_history': chatHistory,
-    'prompt_truncation': "AUTO",
-    'citation_quality': "fast",
-    connectors: [{"id":"pcl---pinecone-courses-connector-de9j0d"}],
-    temperature: 0.0
+  const pineconeVectorStore = await PineconeStore.fromExistingIndex(embeddings, {
+    pineconeIndex
   })
-
-
-  const response = await fetch('https://api.cohere.ai/v1/chat', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${process.env.COHERE_API_KEY}`,
-    },
-    body
+  const retriever = pineconeVectorStore.asRetriever({
+    k: 5
   });
+ 
+  const prompt = PromptTemplate.fromTemplate(aiPrompt);
 
-  if (!response.ok) {
-    return new Response(await response.text(), {
-      status: response.status,
-    });
-  }
-
-  const stream = CohereStream(response, {
-    onCompletion: async completion => {
-          const title = json.messages[0].content.substring(0, 100)
-          const id = json.id ?? nanoid()
+  const model = new ChatOpenAI({
+    temperature: 0.0,
+    streaming: true,
+    callbacks: [
+      {
+        async handleLLMEnd(output) {
+          const outputText = output.generations[0][0].text
+          const { results: citations } = await exa.search(outputText, { useAutoprompt: false, type: "keyword", numResults: 3 });
+          const title = outputText.substring(0, 100)
           const createdAt = Date.now()
+
+          const id = body.id ?? nanoid()
           const path = `/chat/${id}`
           const payload = {
             id,
@@ -91,8 +62,9 @@ export async function POST(req: Request, res: Response) {
             messages: [
               ...messages,
               {
-                content: completion.replaceAll('undefined', ''),
-                role: 'assistant'
+                content: outputText.replaceAll('undefined', ''),
+                role: 'assistant',
+                citations
               }
             ]
           }
@@ -101,9 +73,25 @@ export async function POST(req: Request, res: Response) {
             score: createdAt,
             member: `chat:${id}`
           })
-    }
+        },
+      }
+    ]
   });
+
+  const chain = RunnableSequence.from([
+    prompt,
+    model,
+    new BytesOutputParser()
+  ]);
+
+  const retrieverAndFormatter = retriever.pipe(formatDocumentsAsString);
+  const documents = await retrieverAndFormatter.invoke(currentMessageContent);
  
+  const stream = await chain.stream({
+    question: currentMessageContent,
+    chat_history: formattedPreviousMessages.join('\n'),
+    context: documents
+  });
 
   return new StreamingTextResponse(stream);
 }

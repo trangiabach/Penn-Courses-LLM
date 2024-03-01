@@ -1,6 +1,3 @@
-// Inspired by Chatbot-UI and modified to fit the needs of this project
-// @see https://github.com/mckaywrigley/chatbot-ui/blob/main/components/Markdown/CodeBlock.tsx
-
 'use client'
 
 import { FC, memo } from 'react'
@@ -129,7 +126,7 @@ const CodeBlock: FC<Props> = memo(({ language, value }) => {
           padding: '1.5rem 1rem'
         }}
         lineNumberStyle={{
-          userSelect: "none",
+          userSelect: 'none'
         }}
         codeTagProps={{
           style: {

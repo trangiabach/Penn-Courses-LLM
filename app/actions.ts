@@ -95,14 +95,11 @@ export async function clearChats() {
 export async function getSharedChat(id: string) {
   const chat = await kv.hgetall<Chat>(`chat:${id}`)
 
-  if (!chat || !chat.sharePath) {
-    return null
-  }
-
   return chat
 }
 
 export async function shareChat(id: string) {
+  console.log('share')
   const session = await auth()
 
   if (!session?.user?.id) {

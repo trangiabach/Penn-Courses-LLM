@@ -50,18 +50,19 @@ export function Chat({ id, initialMessages, className }: ChatProps) {
           toast.error(response.statusText)
         }
       },
-      onFinish() {
+      async onFinish() {
         if (!path.includes('chat')) {
           window.history.pushState({}, '', `/chat/${id}`)
         }
-      }
+      },
+      sendExtraMessageFields: true
     })
   return (
     <>
       <div className={cn('pb-[200px] pt-4 md:pt-10', className)}>
         {messages.length ? (
           <>
-            <ChatList messages={messages} />
+            <ChatList messages={messages} isLoading={isLoading} />
             <ChatScrollAnchor trackVisibility={isLoading} />
           </>
         ) : (
